@@ -1,0 +1,121 @@
+/* Задание 2 — стили вынесены в отдельный файл и подключены через id и классы */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #222;
+}
+
+/* ---------- Шапка (на всю ширину окна) ---------- */
+
+#site-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #2f4f2f;
+  color: #fff;
+  padding: 12px 24px;
+}
+
+#site-logo {
+  border-radius: 4px;
+}
+
+#site-title {
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+/* ---------- Меню (максимум 960px, по центру) ---------- */
+
+#site-nav {
+  width: 100%;
+  background-color: #eef2ee;
+  border-bottom: 1px solid #cdd6cd;
+}
+
+#site-nav ul {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+#site-nav a {
+  display: inline-block;
+  padding: 12px 0;
+  margin-right: 24px;
+  color: #2f4f2f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#site-nav a:hover,
+#site-nav a:focus {
+  text-decoration: underline;
+}
+
+/* ---------- Контент (максимум 960px, по центру) ---------- */
+
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+#content section {
+  margin-bottom: 40px;
+}
+
+/* ---------- Таблица ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #b5b5b5;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #2f4f2f;
+  color: #fff;
+}
+
+.row-odd {
+  background-color: #ffffff;
+}
+
+.row-even {
+  background-color: #e6ede6;
+}
+
+/* ---------- Форма ---------- */
+
+form label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+/* ---------- Подвал (на всю ширину окна) ---------- */
+
+#site-footer {
+  width: 100%;
+  background-color: #2f4f2f;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+}
