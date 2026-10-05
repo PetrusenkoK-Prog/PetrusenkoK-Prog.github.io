@@ -1,0 +1,90 @@
+/* Задание 4 — Bootstrap 4 (Mobile First).
+   Сетка, отступы (p-*, m-*) и адаптивность — средствами Bootstrap.
+   Здесь только оформление: цвета и размеры шрифта. */
+
+:root {
+  --green-dark: #2f4f2f;
+  --green-light: #eef2ee;
+  --green-border: #cdd6cd;
+  --green-stripe: #e6ede6;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+/* Контент не шире 960px, как в задании 3 */
+.container {
+  max-width: 960px;
+}
+
+/* ---------- Шапка и подвал ---------- */
+.site-header,
+.site-footer {
+  background-color: var(--green-dark);
+}
+
+.site-title {
+  font-size: 1.1rem;
+}
+
+/* ---------- Меню: на смартфоне столбец, от 768px строка ---------- */
+.site-nav {
+  background-color: var(--green-light);
+  border-bottom: 1px solid var(--green-border);
+}
+
+.site-nav .nav-link {
+  color: var(--green-dark);
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus {
+  text-decoration: underline;
+}
+
+.site-nav .nav-item + .nav-item {
+  border-top: 1px solid var(--green-border);
+}
+
+/* ---------- Таблица ---------- */
+.table {
+  font-size: 0.85rem;
+}
+
+.table thead th {
+  background-color: var(--green-dark);
+  color: #fff;
+  border-color: var(--green-dark);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: var(--green-stripe);
+}
+
+/* ---------- Форма ---------- */
+.btn-success {
+  background-color: var(--green-dark);
+  border-color: var(--green-dark);
+}
+
+/* ===== Планшеты и десктопы (от 768px) ===== */
+@media screen and (min-width: 768px) {
+
+  .site-title {
+    font-size: 1.4rem;
+  }
+
+  .site-nav .nav-item + .nav-item {
+    border-top: none;
+  }
+
+  .table {
+    font-size: 1rem;
+  }
+}
